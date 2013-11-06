@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A5E4451182AD72500CD2A74 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5E4450182AD72500CD2A74 /* Cocoa.framework */; };
+		9A5E445B182AD72500CD2A74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A5E4459182AD72500CD2A74 /* InfoPlist.strings */; };
+		9A5E445D182AD72500CD2A74 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E445C182AD72500CD2A74 /* main.m */; };
+		9A5E4461182AD72500CD2A74 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9A5E445F182AD72500CD2A74 /* Credits.rtf */; };
+		9A5E4464182AD72500CD2A74 /* DMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E4463182AD72500CD2A74 /* DMAppDelegate.m */; };
+		9A5E4467182AD72600CD2A74 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5E4465182AD72600CD2A74 /* MainMenu.xib */; };
+		9A7D7C02182ADA6B001AC04C /* DMPollService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7D7C01182ADA6B001AC04C /* DMPollService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9A5E444D182AD72500CD2A74 /* DoorisMenulet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoorisMenulet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5E4450182AD72500CD2A74 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9A5E4453182AD72500CD2A74 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9A5E4454182AD72500CD2A74 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9A5E4455182AD72500CD2A74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9A5E4458182AD72500CD2A74 /* DoorisMenulet-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoorisMenulet-Info.plist"; sourceTree = "<group>"; };
+		9A5E445A182AD72500CD2A74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A5E445C182AD72500CD2A74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A5E445E182AD72500CD2A74 /* DoorisMenulet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoorisMenulet-Prefix.pch"; sourceTree = "<group>"; };
+		9A5E4460182AD72500CD2A74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9A5E4462182AD72500CD2A74 /* DMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAppDelegate.h; sourceTree = "<group>"; };
+		9A5E4463182AD72500CD2A74 /* DMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAppDelegate.m; sourceTree = "<group>"; };
+		9A5E4466182AD72600CD2A74 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9A7D7C00182ADA6B001AC04C /* DMPollService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMPollService.h; path = Classes/Services/PollService/DMPollService.h; sourceTree = "<group>"; };
+		9A7D7C01182ADA6B001AC04C /* DMPollService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMPollService.m; path = Classes/Services/PollService/DMPollService.m; sourceTree = "<group>"; };
+		9A7D7C04182ADCEE001AC04C /* DMPollServiceObserverProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DMPollServiceObserverProtocol.h; path = Protocols/DMPollServiceObserverProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A5E444A182AD72500CD2A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5E4451182AD72500CD2A74 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A5E4444182AD72500CD2A74 = {
+			isa = PBXGroup;
+			children = (
+				9A5E4456182AD72500CD2A74 /* DoorisMenulet */,
+				9A5E444F182AD72500CD2A74 /* Frameworks */,
+				9A5E444E182AD72500CD2A74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A5E444E182AD72500CD2A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A5E444D182AD72500CD2A74 /* DoorisMenulet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A5E444F182AD72500CD2A74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5E4450182AD72500CD2A74 /* Cocoa.framework */,
+				9A5E4452182AD72500CD2A74 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A5E4452182AD72500CD2A74 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5E4453182AD72500CD2A74 /* AppKit.framework */,
+				9A5E4454182AD72500CD2A74 /* CoreData.framework */,
+				9A5E4455182AD72500CD2A74 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9A5E4456182AD72500CD2A74 /* DoorisMenulet */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D7BFD182ADA33001AC04C /* Classes */,
+				9A5E4462182AD72500CD2A74 /* DMAppDelegate.h */,
+				9A5E4463182AD72500CD2A74 /* DMAppDelegate.m */,
+				9A5E4465182AD72600CD2A74 /* MainMenu.xib */,
+				9A5E4457182AD72500CD2A74 /* Supporting Files */,
+			);
+			path = DoorisMenulet;
+			sourceTree = "<group>";
+		};
+		9A5E4457182AD72500CD2A74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A5E4458182AD72500CD2A74 /* DoorisMenulet-Info.plist */,
+				9A5E4459182AD72500CD2A74 /* InfoPlist.strings */,
+				9A5E445C182AD72500CD2A74 /* main.m */,
+				9A5E445E182AD72500CD2A74 /* DoorisMenulet-Prefix.pch */,
+				9A5E445F182AD72500CD2A74 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A7D7BFD182ADA33001AC04C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D7C03182ADCDA001AC04C /* Protocols */,
+				9A7D7BFE182ADA3A001AC04C /* Services */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9A7D7BFE182ADA3A001AC04C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D7BFF182ADA41001AC04C /* Poll Service */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9A7D7BFF182ADA41001AC04C /* Poll Service */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D7C00182ADA6B001AC04C /* DMPollService.h */,
+				9A7D7C01182ADA6B001AC04C /* DMPollService.m */,
+			);
+			name = "Poll Service";
+			sourceTree = "<group>";
+		};
+		9A7D7C03182ADCDA001AC04C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9A7D7C04182ADCEE001AC04C /* DMPollServiceObserverProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A5E444C182AD72500CD2A74 /* DoorisMenulet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5E446A182AD72600CD2A74 /* Build configuration list for PBXNativeTarget "DoorisMenulet" */;
+			buildPhases = (
+				9A5E4449182AD72500CD2A74 /* Sources */,
+				9A5E444A182AD72500CD2A74 /* Frameworks */,
+				9A5E444B182AD72500CD2A74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoorisMenulet;
+			productName = DoorisMenulet;
+			productReference = 9A5E444D182AD72500CD2A74 /* DoorisMenulet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A5E4445182AD72500CD2A74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Wolfgang Timme";
+			};
+			buildConfigurationList = 9A5E4448182AD72500CD2A74 /* Build configuration list for PBXProject "DoorisMenulet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A5E4444182AD72500CD2A74;
+			productRefGroup = 9A5E444E182AD72500CD2A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A5E444C182AD72500CD2A74 /* DoorisMenulet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A5E444B182AD72500CD2A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5E445B182AD72500CD2A74 /* InfoPlist.strings in Resources */,
+				9A5E4461182AD72500CD2A74 /* Credits.rtf in Resources */,
+				9A5E4467182AD72600CD2A74 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A5E4449182AD72500CD2A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5E445D182AD72500CD2A74 /* main.m in Sources */,
+				9A5E4464182AD72500CD2A74 /* DMAppDelegate.m in Sources */,
+				9A7D7C02182ADA6B001AC04C /* DMPollService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9A5E4459182AD72500CD2A74 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A5E445A182AD72500CD2A74 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9A5E445F182AD72500CD2A74 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A5E4460182AD72500CD2A74 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9A5E4465182AD72600CD2A74 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A5E4466182AD72600CD2A74 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A5E4468182AD72600CD2A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9A5E4469182AD72600CD2A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9A5E446B182AD72600CD2A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoorisMenulet/DoorisMenulet-Prefix.pch";
+				INFOPLIST_FILE = "DoorisMenulet/DoorisMenulet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9A5E446C182AD72600CD2A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DoorisMenulet/DoorisMenulet-Prefix.pch";
+				INFOPLIST_FILE = "DoorisMenulet/DoorisMenulet-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A5E4448182AD72500CD2A74 /* Build configuration list for PBXProject "DoorisMenulet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5E4468182AD72600CD2A74 /* Debug */,
+				9A5E4469182AD72600CD2A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5E446A182AD72600CD2A74 /* Build configuration list for PBXNativeTarget "DoorisMenulet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5E446B182AD72600CD2A74 /* Debug */,
+				9A5E446C182AD72600CD2A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A5E4445182AD72500CD2A74 /* Project object */;
+}
